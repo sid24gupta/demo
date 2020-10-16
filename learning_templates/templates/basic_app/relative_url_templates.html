@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome to relative url templates</h1>
+
+<!-- It won't work like this -->
+<!--<a href="basic_app/other.html">click here</a>-->
+<!--using template tagging -->
+
+<a href="{% url 'basic_app:other' %}">Click here</a>
+<a href="{% url 'admin:index' %}">Click for admin</a>
+<a href="{% url 'index' %}">Index goto</a>
+</body>
+</html>
